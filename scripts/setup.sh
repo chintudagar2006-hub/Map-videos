@@ -2,13 +2,15 @@
 # One-time setup (macOS or Linux). Run from the project root:  bash scripts/setup.sh
 set -e
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"; cd "$ROOT"
+# Linux (Codex cloud container): install ffmpeg if missing
+if ! command -v ffmpeg >/dev/null 2>&1 && command -v apt-get >/dev/null 2>&1; then (sudo -n true 2>/dev/null && SUDO=sudo); $SUDO apt-get update -qq && $SUDO apt-get install -y -qq ffmpeg fonts-noto-color-emoji || true; fi
 need() { command -v "$1" >/dev/null 2>&1 || { echo "MISSING: $1  ->  $2"; MISS=1; }; }
 need node   "Mac: brew install node     | Linux: install Node.js 20+"
 need python3 "Mac: brew install python  | Linux: apt install python3"
 need ffmpeg "Mac: brew install ffmpeg   | Linux: apt install ffmpeg"
 [ -n "$MISS" ] && { echo "Install the missing tools above, then run this again."; exit 1; }
 echo "== node packages (renderer + map data)"
-( cd kit/templates/threejs_film && npm install --no-audit --no-fund && npx playwright install chromium )
+( cd kit/templates/threejs_film && npm install --no-audit --no-fund && if [ "$(uname)" = Linux ]; then npx playwright install --with-deps chromium || npx playwright install chromium; else npx playwright install chromium; fi )
 ( cd kit/geo && npm install --no-audit --no-fund )
 echo "== python packages (voice + sound)"
 python3 -m pip install -q kokoro-onnx soundfile numpy scipy 2>/dev/null || python3 -m pip install -q --break-system-packages kokoro-onnx soundfile numpy scipy

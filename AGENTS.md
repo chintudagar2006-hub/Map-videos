@@ -31,10 +31,16 @@ Everything is code: three.js scenes rendered frame by frame by headless Chrome, 
 - Length 55-75 s, 170-220 words, narrator ~3 words/s.
 
 ## 2. Script recipe (funny "What if")
-1. Hook question (<= 15 words). 2. Name the new thing ("Meet the Globo."). 3. Character gag showing day one.
-4. Escalation with 2-3 concrete, true mechanics (prices, banks, borders...). 5. "Sounds crazy? <real example>" (one
-real fact, checked). 6. Absurd climax (countries fighting like a group chat). 7. Twist punchline. 8. Comment question.
-Write lines as `who: text`; keep jokes about situations, not about ethnic stereotypes. Check every fact on the web.
+1. Hook question (<= 15 words).
+2. Name the new thing ("Meet the Globo.").
+3. A character gag showing day one.
+4. Escalation with 2-3 concrete, true mechanics (prices, banks, borders...).
+5. "Sounds crazy? <one real example>": one real, checked fact.
+6. Absurd climax (countries fighting like a group chat).
+7. Twist punchline.
+8. Comment question.
+
+Write lines as `who: text`. Keep jokes about situations, not ethnic stereotypes. Check every fact on the web.
 
 ## 3. Project layout
 ```
@@ -88,9 +94,11 @@ scripts/render.sh episodes/<name> [--voice] [--stills]   voice -> plan -> sound 
    characters from another room in the shot, empty sets, cut faces. Also `python3 kit/tools/film_plan.py check film.json`.
 9. **sound.py**: room tones per place, a blip on every pop-up, whooshes on camera moves, a ding/boom on the reveal,
    a drumroll before the punchline, a light bouncy music bed ducked under the voice, loudness -14 LUFS.
-10. **Render**: `bash scripts/render.sh episodes/<name>` -> `out/<name>_final.mp4` and `<name>_upload.mp4` (crf 23).
-    On a machine without a GPU this takes 2-4 s per frame; render in chunks with `--from A --to B --out chunk.mp4`
-    (render.mjs `--animatic`) and join with ffmpeg concat if a single run would hit a time limit.
+10. **Render**: on a Mac with GPU `bash scripts/render.sh episodes/<name>`. In Codex cloud (CPU only, 2-4 s per frame)
+    ALWAYS use the resumable `bash scripts/render_chunks.sh episodes/<name>`; if it stops, run it again.
+    Output: `out/<name>_final.mp4` and `<name>_upload.mp4` (crf 23). To hand the video to the owner, copy
+    `<name>_upload.mp4` to `videos/<name>.mp4` (outside the ignored out/ folder) and commit it on a branch / PR, so the
+    owner can download it from GitHub on the phone. Keep it under 90 MB.
 11. Deliver both mp4 files + a title, a short English description and 5-8 hashtags.
 
 ## 5. Rules learned from the owner (follow every time)
