@@ -1,0 +1,6 @@
+node_modules/
+kit/voice/models/
+episodes/*/out/
+episodes/*/sound/mix_raw.wav
+episodes/*/voice/voice48.wav
+__pycache__/

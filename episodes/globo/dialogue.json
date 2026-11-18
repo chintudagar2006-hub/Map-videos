@@ -1,0 +1,205 @@
+{
+ "lead": 0.35,
+ "gap": 0.2,
+ "tail": 2.2,
+ "voices": {
+  "nar": {
+   "style": "am_michael:1.0",
+   "speed": 1.25,
+   "eq": "equalizer=f=180:t=q:w=1:g=2,equalizer=f=3200:t=q:w=1.2:g=2.5,equalizer=f=7000:t=q:w=1:g=1.5"
+  },
+  "brad": {
+   "style": "am_echo:1.0",
+   "speed": 1.15,
+   "eq": "equalizer=f=180:t=q:w=1:g=2,equalizer=f=3200:t=q:w=1.2:g=2.5,equalizer=f=7000:t=q:w=1:g=1.5"
+  },
+  "bar": {
+   "style": "af_heart:1.0",
+   "speed": 1.15,
+   "eq": "equalizer=f=180:t=q:w=1:g=2,equalizer=f=3200:t=q:w=1.2:g=2.5,equalizer=f=7000:t=q:w=1:g=1.5"
+  },
+  "bank": {
+   "style": "bm_lewis:1.0",
+   "speed": 1.05,
+   "eq": "equalizer=f=180:t=q:w=1:g=2,equalizer=f=3200:t=q:w=1.2:g=2.5,equalizer=f=7000:t=q:w=1:g=1.5"
+  }
+ },
+ "lines": [
+  {
+   "who": "nar",
+   "say": "What if tomorrow, the US dollar just... disappeared?",
+   "speed": 0.98,
+   "gap": 0.15
+  },
+  {
+   "who": "nar",
+   "say": "And all one hundred ninety-five countries had to share one single money?",
+   "speed": 1.05,
+   "gap": 0.4
+  },
+  {
+   "who": "nar",
+   "say": "Meet the Globo.",
+   "speed": 0.95,
+   "gap": 0.45
+  },
+  {
+   "who": "brad",
+   "say": "Cool. How much is a coffee?",
+   "speed": 1.0,
+   "gap": 0.25
+  },
+  {
+   "who": "bar",
+   "say": "Three Globos.",
+   "speed": 0.95,
+   "gap": 0.35
+  },
+  {
+   "who": "brad",
+   "say": "...Is that a lot?",
+   "speed": 0.9,
+   "gap": 0.35
+  },
+  {
+   "who": "nar",
+   "say": "Nobody knows. Not even the government.",
+   "speed": 1.0,
+   "gap": 0.45
+  },
+  {
+   "who": "nar",
+   "say": "Then someone checks the internet. A burger costs nine Globos in one country...",
+   "speed": 1.05,
+   "gap": 0.12
+  },
+  {
+   "who": "nar",
+   "say": "and two in another.",
+   "speed": 0.95,
+   "gap": 0.35
+  },
+  {
+   "who": "brad",
+   "say": "I'm flying there for lunch.",
+   "speed": 1.0,
+   "gap": 0.3
+  },
+  {
+   "who": "nar",
+   "say": "So are fifty million other people.",
+   "speed": 1.0,
+   "gap": 0.5
+  },
+  {
+   "who": "nar",
+   "say": "But here's the scary part. One money means one boss.",
+   "speed": 1.0,
+   "gap": 0.15
+  },
+  {
+   "who": "nar",
+   "say": "A single World Bank sets the rules... for eight billion people.",
+   "speed": 1.0,
+   "gap": 0.35
+  },
+  {
+   "who": "bank",
+   "say": "Raise interest rates!",
+   "speed": 1.0,
+   "gap": 0.3,
+   "shout": true
+  },
+  {
+   "who": "nar",
+   "say": "Half the planet cheers.",
+   "speed": 1.0,
+   "gap": 0.12
+  },
+  {
+   "who": "nar",
+   "say": "The other half's economy catches fire.",
+   "speed": 1.05,
+   "gap": 0.45
+  },
+  {
+   "who": "nar",
+   "say": "Sounds crazy? Europe actually tried this.",
+   "speed": 1.0,
+   "gap": 0.15
+  },
+  {
+   "who": "nar",
+   "say": "Twenty countries share the euro... and when Greece crashed, it couldn't print its own money to escape.",
+   "speed": 1.08,
+   "gap": 0.5
+  },
+  {
+   "who": "nar",
+   "say": "But the biggest war? Whose face goes on the coin.",
+   "speed": 1.0,
+   "gap": 0.4
+  },
+  {
+   "who": "nar",
+   "say": "America wants an eagle.",
+   "speed": 1.05,
+   "gap": 0.12
+  },
+  {
+   "who": "nar",
+   "say": "France wants a croissant.",
+   "speed": 1.05,
+   "gap": 0.12
+  },
+  {
+   "who": "nar",
+   "say": "Canada politely suggests a moose.",
+   "speed": 1.05,
+   "gap": 0.12
+  },
+  {
+   "who": "nar",
+   "say": "Australia submits a spider the size of a dinner plate.",
+   "speed": 1.05,
+   "gap": 0.45
+  },
+  {
+   "who": "nar",
+   "say": "After four hundred hours of meetings... the winner is...",
+   "speed": 1.0,
+   "gap": 0.35
+  },
+  {
+   "who": "nar",
+   "say": "a potato.",
+   "speed": 0.92,
+   "gap": 0.4
+  },
+  {
+   "who": "brad",
+   "say": "Why a potato?!",
+   "speed": 1.0,
+   "gap": 0.3,
+   "shout": true
+  },
+  {
+   "who": "bank",
+   "say": "It's the only thing every country already eats.",
+   "speed": 1.0,
+   "gap": 0.5
+  },
+  {
+   "who": "nar",
+   "say": "So be honest... would you keep the dollar, or switch to the potato coin?",
+   "speed": 1.0,
+   "gap": 0.12
+  },
+  {
+   "who": "nar",
+   "say": "Comment below.",
+   "speed": 1.0,
+   "gap": 0.3
+  }
+ ]
+}
