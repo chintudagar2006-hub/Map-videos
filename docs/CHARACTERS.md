@@ -200,3 +200,6 @@ Use any of these in film.json: `"puppet": "cast:<name>"`. Pictures: docs/charact
 - `viper` (Viper)
 - `headchef` (Head Chef)
 
+## sheet20: White roof
+- `painter` (Roof Painter), 1.75 m
+

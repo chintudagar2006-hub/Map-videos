@@ -1,0 +1,110 @@
+{
+ "lead": 0.35,
+ "gap": 0.17,
+ "tail": 2.4,
+ "voices": {
+  "nar": {
+   "style": "am_michael:1.0",
+   "speed": 1.25,
+   "eq": "equalizer=f=180:t=q:w=1:g=2,equalizer=f=3200:t=q:w=1.2:g=2.5,equalizer=f=7000:t=q:w=1:g=1.5"
+  },
+  "nb": {
+   "style": "am_fenrir:1.0",
+   "speed": 1.2,
+   "eq": "equalizer=f=180:t=q:w=1:g=2,equalizer=f=3200:t=q:w=1.2:g=2.5,equalizer=f=7000:t=q:w=1:g=1.5"
+  }
+ },
+ "lines": [
+  {
+   "who": "nar",
+   "say": "He poured forty gallons of bright white paint onto his roof...",
+   "speed": 0.98,
+   "gap": 0.12
+  },
+  {
+   "who": "nar",
+   "say": "while every single neighbor in the valley coated theirs in thick black tar.",
+   "speed": 1.02,
+   "gap": 0.38
+  },
+  {
+   "who": "nar",
+   "say": "Down here, summers hit a hundred and fifteen degrees,",
+   "speed": 1.0,
+   "gap": 0.1
+  },
+  {
+   "who": "nar",
+   "say": "and everyone swears dark tar is the only thing that seals out cracks.",
+   "speed": 1.03,
+   "gap": 0.32
+  },
+  {
+   "who": "nar",
+   "say": "His next-door neighbor yells up,",
+   "speed": 1.02,
+   "gap": 0.1
+  },
+  {
+   "who": "nb",
+   "say": "You're blinding the whole street\u2014and that chalk will wash off by July!",
+   "speed": 1.05,
+   "gap": 0.42,
+   "shout": true
+  },
+  {
+   "who": "nar",
+   "say": "Then August arrives,",
+   "speed": 0.97,
+   "gap": 0.1
+  },
+  {
+   "who": "nar",
+   "say": "and the hottest heatwave in fifty years parks right over the town.",
+   "speed": 1.0,
+   "gap": 0.36
+  },
+  {
+   "who": "nar",
+   "say": "Inside the black-tar houses, the roofs act like giant frying pans\u2014",
+   "speed": 1.02,
+   "gap": 0.08
+  },
+  {
+   "who": "nar",
+   "say": "soaking up the sun and baking the rooms underneath even at midnight.",
+   "speed": 1.02,
+   "gap": 0.36
+  },
+  {
+   "who": "nar",
+   "say": "Meanwhile, his white roof acts like a mirror,",
+   "speed": 0.98,
+   "gap": 0.1
+  },
+  {
+   "who": "nar",
+   "say": "bouncing almost ninety percent of that sunlight straight back into space before it ever turns into heat.",
+   "speed": 1.04,
+   "gap": 0.36
+  },
+  {
+   "who": "nar",
+   "say": "While every AC unit on the block trips the power grid,",
+   "speed": 1.03,
+   "gap": 0.12
+  },
+  {
+   "who": "nar",
+   "say": "he's sitting inside twenty degrees cooler\u2014",
+   "speed": 0.97,
+   "gap": 0.15
+  },
+  {
+   "who": "nar",
+   "say": "without turning on a single machine.",
+   "speed": 0.95,
+   "gap": 0.3
+  }
+ ]
+}

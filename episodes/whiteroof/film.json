@@ -1,0 +1,1309 @@
+{
+ "title": "He Painted His Roof White",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "words": "voice/words.json",
+ "end": 1428,
+ "kit3d": true,
+ "tween": {
+  "ones": true
+ },
+ "camera_idea": {
+  "name": "Heat story",
+  "why": "High angles sell the black-vs-white roofs; the interiors sell the payoff.",
+  "signature": "Aerial pushes over the valley, close faces in the rooms."
+ },
+ "cast": {
+  "hero": {
+   "puppet": "cast:painter",
+   "height": 1.75,
+   "heads_tall": 2.9
+  },
+  "nb": {
+   "puppet": "cast:bbqdad",
+   "height": 1.8,
+   "heads_tall": 2.9
+  },
+  "mom": {
+   "puppet": "cast:soccermom",
+   "height": 1.68,
+   "heads_tall": 2.9
+  }
+ },
+ "places": {
+  "street": {
+   "set": "street",
+   "light": "day",
+   "light_over": {
+    "ai": 1.2
+   },
+   "cues": {
+    "paint0": 0.65,
+    "paint1": 6.435,
+    "egg": 23.161,
+    "mirror": 30.936,
+    "trip": 40.178,
+    "end": 48.61
+   }
+  },
+  "street_hot": {
+   "set": "street",
+   "light": "golden",
+   "light_over": {
+    "ai": 1.3,
+    "amb": "#ffb070"
+   },
+   "cues": {
+    "paint0": 0.65,
+    "paint1": 6.435,
+    "egg": 23.161,
+    "mirror": 30.936,
+    "trip": 40.178,
+    "end": 48.61
+   },
+   "hot": true
+  },
+  "hot": {
+   "set": "room",
+   "light": "interior",
+   "light_over": {
+    "ai": 1.2,
+    "amb": "#d08050",
+    "si": 1.1
+   },
+   "cues": {
+    "paint0": 0.65,
+    "paint1": 6.435,
+    "egg": 23.161,
+    "mirror": 30.936,
+    "trip": 40.178,
+    "end": 48.61
+   },
+   "mode": "hot"
+  },
+  "cool": {
+   "set": "room",
+   "light": "interior",
+   "light_over": {
+    "ai": 1.35,
+    "amb": "#c8dcf0",
+    "si": 1.2
+   },
+   "cues": {
+    "paint0": 0.65,
+    "paint1": 6.435,
+    "egg": 23.161,
+    "mirror": 30.936,
+    "trip": 40.178,
+    "end": 48.61
+   },
+   "mode": "cool"
+  }
+ },
+ "held3d": [
+  {
+   "who": "hero",
+   "obj": "bucket",
+   "module": "sets/lib.js",
+   "builder": "buildBucket",
+   "grip": "raise",
+   "hand": "R"
+  },
+  {
+   "who": "nb",
+   "obj": "mop",
+   "module": "sets/lib.js",
+   "builder": "buildMop",
+   "grip": "raise",
+   "hand": "R"
+  },
+  {
+   "who": "hero",
+   "obj": "lemonade",
+   "module": "sets/lib.js",
+   "builder": "buildLemonade",
+   "grip": "raise",
+   "hand": "R"
+  }
+ ],
+ "takes": [
+  {
+   "id": "street",
+   "place": "street",
+   "stations": [
+    {
+     "at": {
+      "s": 0
+     },
+     "lead": 0,
+     "subject": "hero",
+     "hold": 0.25,
+     "pos": [
+      -0.352,
+      -1.955,
+      5.6
+     ],
+     "aim": [
+      0.9,
+      0.4,
+      4.444
+     ],
+     "lens": 30,
+     "framing": "M"
+    },
+    {
+     "at": {
+      "s": 2.3
+     },
+     "lead": 0,
+     "subject": "hero",
+     "hold": 0.25,
+     "pos": [
+      -0.294,
+      -2.57,
+      7.4
+     ],
+     "aim": [
+      0.30000000000000004,
+      0.8,
+      4.048
+     ],
+     "lens": 28,
+     "framing": "W",
+     "travel": 1.4
+    },
+    {
+     "at": {
+      "s": 3.493
+     },
+     "lead": 0,
+     "subject": "town",
+     "hold": 0.25,
+     "pos": [
+      14,
+      -24,
+      20
+     ],
+     "aim": [
+      0,
+      6,
+      1
+     ],
+     "lens": 24,
+     "framing": "W",
+     "travel": 0.05
+    },
+    {
+     "at": {
+      "s": 6.061
+     },
+     "lead": 0,
+     "subject": "town",
+     "hold": 0.25,
+     "pos": [
+      6,
+      -17,
+      13
+     ],
+     "aim": [
+      -2,
+      4,
+      2
+     ],
+     "lens": 26,
+     "framing": "W",
+     "travel": 1.6
+    },
+    {
+     "at": {
+      "s": 7.265
+     },
+     "lead": 0,
+     "subject": "sign",
+     "hold": 0.25,
+     "pos": [
+      -11.4,
+      -8.6,
+      3.0
+     ],
+     "aim": [
+      -13,
+      -3.9,
+      3.0
+     ],
+     "lens": 30,
+     "framing": "M",
+     "travel": 0.05
+    },
+    {
+     "at": {
+      "s": 9.965
+     },
+     "lead": 0,
+     "subject": "nb",
+     "hold": 0.25,
+     "pos": [
+      -8.088,
+      -1.906,
+      5.1
+     ],
+     "aim": [
+      -9.0,
+      0.6,
+      4.394
+     ],
+     "lens": 30,
+     "framing": "M",
+     "travel": 0.05
+    },
+    {
+     "at": {
+      "s": 13.864
+     },
+     "lead": 0,
+     "subject": "nb",
+     "hold": 0.25,
+     "pos": [
+      -6.23,
+      -5.184,
+      1.1
+     ],
+     "aim": [
+      -4.7,
+      -3.0,
+      1.194
+     ],
+     "lens": 30,
+     "framing": "M",
+     "travel": 0.05
+    },
+    {
+     "at": {
+      "s": 15.447
+     },
+     "lead": 0,
+     "subject": "nb",
+     "hold": 0.25,
+     "pos": [
+      -5.726,
+      -5.2,
+      1.0
+     ],
+     "aim": [
+      -4.7,
+      -3.0,
+      1.366
+     ],
+     "lens": 38,
+     "framing": "C",
+     "travel": 0.35
+    },
+    {
+     "at": {
+      "s": 16.747
+     },
+     "lead": 0,
+     "subject": "hero",
+     "hold": 0.25,
+     "pos": [
+      -0.073,
+      -2.273,
+      3.8
+     ],
+     "aim": [
+      0.9,
+      0.4,
+      4.444
+     ],
+     "lens": 32,
+     "framing": "M",
+     "travel": 0.05
+    }
+   ]
+  },
+  {
+   "id": "heat",
+   "place": "street_hot",
+   "stations": [
+    {
+     "at": {
+      "s": 18.408
+     },
+     "lead": 0,
+     "subject": "town",
+     "hold": 0.25,
+     "pos": [
+      0,
+      -30,
+      6
+     ],
+     "aim": [
+      5,
+      40,
+      18
+     ],
+     "lens": 22,
+     "framing": "W"
+    },
+    {
+     "at": {
+      "s": 19.632
+     },
+     "lead": 0,
+     "subject": "town",
+     "hold": 0.25,
+     "pos": [
+      10,
+      -26,
+      22
+     ],
+     "aim": [
+      0,
+      8,
+      2
+     ],
+     "lens": 24,
+     "framing": "W",
+     "travel": 2.2
+    },
+    {
+     "at": {
+      "s": 23.161
+     },
+     "lead": 0,
+     "subject": "roof",
+     "hold": 0.25,
+     "pos": [
+      7.0,
+      -2.6,
+      5.2
+     ],
+     "aim": [
+      8.5,
+      0.8,
+      3.3
+     ],
+     "lens": 34,
+     "framing": "M",
+     "travel": 0.05
+    },
+    {
+     "at": {
+      "s": 26.362
+     },
+     "lead": 0,
+     "subject": "roof",
+     "hold": 0.25,
+     "pos": [
+      7.6,
+      -1.6,
+      4.5
+     ],
+     "aim": [
+      8.5,
+      0.8,
+      3.35
+     ],
+     "lens": 40,
+     "framing": "C",
+     "travel": 1.2
+    }
+   ]
+  },
+  {
+   "id": "hot1",
+   "place": "hot",
+   "stations": [
+    {
+     "at": {
+      "s": 27.136
+     },
+     "lead": 0,
+     "subject": "nb",
+     "hold": 0.25,
+     "pos": [
+      0.2,
+      -3.2,
+      1.5
+     ],
+     "aim": [
+      0,
+      1.5,
+      1.1
+     ],
+     "lens": 26,
+     "framing": "W"
+    },
+    {
+     "at": {
+      "s": 28.316
+     },
+     "lead": 0,
+     "subject": "nb",
+     "hold": 0.25,
+     "pos": [
+      -0.35,
+      -1.317,
+      1.25
+     ],
+     "aim": [
+      -0.35,
+      1.35,
+      0.744
+     ],
+     "lens": 30,
+     "framing": "M",
+     "travel": 1.6
+    }
+   ]
+  },
+  {
+   "id": "rays",
+   "place": "street_hot",
+   "stations": [
+    {
+     "at": {
+      "s": 30.956
+     },
+     "lead": 0,
+     "subject": "town",
+     "hold": 0.25,
+     "pos": [
+      2,
+      -26,
+      16
+     ],
+     "aim": [
+      0,
+      4,
+      6
+     ],
+     "lens": 24,
+     "framing": "W"
+    },
+    {
+     "at": {
+      "s": 33.207
+     },
+     "lead": 0,
+     "subject": "town",
+     "hold": 0.25,
+     "pos": [
+      -3,
+      -12,
+      9
+     ],
+     "aim": [
+      1,
+      3,
+      6
+     ],
+     "lens": 26,
+     "framing": "W",
+     "travel": 1.8
+    },
+    {
+     "at": {
+      "s": 36.25
+     },
+     "lead": 0,
+     "subject": "town",
+     "hold": 0.25,
+     "pos": [
+      6,
+      -20,
+      6
+     ],
+     "aim": [
+      4,
+      6,
+      16
+     ],
+     "lens": 24,
+     "framing": "W",
+     "travel": 1.6
+    },
+    {
+     "at": {
+      "s": 38.638
+     },
+     "lead": 0,
+     "subject": "town",
+     "hold": 0.25,
+     "pos": [
+      -8,
+      -15,
+      4.5
+     ],
+     "aim": [
+      4.5,
+      -3.5,
+      5.0
+     ],
+     "lens": 26,
+     "framing": "W",
+     "travel": 0.05
+    },
+    {
+     "at": {
+      "s": 40.278
+     },
+     "lead": 0,
+     "subject": "town",
+     "hold": 0.25,
+     "pos": [
+      -2,
+      -12,
+      5.5
+     ],
+     "aim": [
+      4.7,
+      -4.5,
+      5.8
+     ],
+     "lens": 30,
+     "framing": "M",
+     "travel": 0.4
+    }
+   ]
+  },
+  {
+   "id": "hot2",
+   "place": "hot",
+   "stations": [
+    {
+     "at": {
+      "s": 40.694
+     },
+     "lead": 0,
+     "subject": "nb",
+     "hold": 0.25,
+     "pos": [
+      0,
+      -2.0,
+      1.25
+     ],
+     "aim": [
+      0,
+      1.4,
+      1.05
+     ],
+     "lens": 28,
+     "framing": "M"
+    }
+   ]
+  },
+  {
+   "id": "cool",
+   "place": "cool",
+   "stations": [
+    {
+     "at": {
+      "s": 41.464
+     },
+     "lead": 0,
+     "subject": "hero",
+     "hold": 0.25,
+     "pos": [
+      0.6,
+      -3.0,
+      1.5
+     ],
+     "aim": [
+      0,
+      1.6,
+      1.1
+     ],
+     "lens": 26,
+     "framing": "W"
+    },
+    {
+     "at": {
+      "s": 43.505
+     },
+     "lead": 0,
+     "subject": "hero",
+     "hold": 0.25,
+     "pos": [
+      -0.694,
+      -1.451,
+      1.2
+     ],
+     "aim": [
+      -0.2,
+      1.35,
+      0.744
+     ],
+     "lens": 32,
+     "framing": "M",
+     "travel": 1.4
+    },
+    {
+     "at": {
+      "s": 45.41
+     },
+     "lead": 0,
+     "subject": "hero",
+     "hold": 0.25,
+     "pos": [
+      -0.467,
+      -1.192,
+      1.15
+     ],
+     "aim": [
+      -0.2,
+      1.35,
+      0.866
+     ],
+     "lens": 40,
+     "framing": "C",
+     "travel": 1.8
+    }
+   ]
+  }
+ ],
+ "kicks": [
+  {
+   "at": {
+    "s": 15.447
+   },
+   "amp": 1.6
+  },
+  {
+   "at": {
+    "s": 18.388
+   },
+   "amp": 1.3
+  },
+  {
+   "at": {
+    "s": 21.525
+   },
+   "amp": 1.5
+  },
+  {
+   "at": {
+    "s": 40.178
+   },
+   "amp": 2.2
+  }
+ ],
+ "acts": [
+  {
+   "who": "hero",
+   "at": {
+    "s": 0
+   },
+   "pos": [
+    90,
+    90,
+    0
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "stand",
+   "face": "standard",
+   "move_s": 0.03
+  },
+  {
+   "who": "nb",
+   "at": {
+    "s": 0
+   },
+   "pos": [
+    90,
+    90,
+    0
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "stand",
+   "face": "standard",
+   "move_s": 0.03
+  },
+  {
+   "who": "mom",
+   "at": {
+    "s": 0
+   },
+   "pos": [
+    90,
+    90,
+    0
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "stand",
+   "face": "standard",
+   "move_s": 0.03
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 0
+   },
+   "pos": [
+    0.9,
+    0.4,
+    3.2
+   ],
+   "view": "34",
+   "dir": -1,
+   "pose": "hold_up",
+   "face": "cool",
+   "prop": "bucket",
+   "hand": "R",
+   "move_s": 0.03
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 2.005
+   },
+   "face": "delight"
+  },
+  {
+   "who": "nb",
+   "at": {
+    "s": 0
+   },
+   "pos": [
+    -9.0,
+    0.6,
+    3.2
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "hold_up",
+   "face": "cool",
+   "prop": "mop",
+   "hand": "R",
+   "move_s": 0.03
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 7.315
+   },
+   "prop": "",
+   "pose": "hands_hips",
+   "face": "proud"
+  },
+  {
+   "who": "nb",
+   "at": {
+    "s": 9.965
+   },
+   "face": "proud"
+  },
+  {
+   "who": "nb",
+   "at": {
+    "s": 12.548
+   },
+   "pose": "point_up",
+   "face": "sus",
+   "prop": ""
+  },
+  {
+   "who": "nb",
+   "at": {
+    "s": 13.814
+   },
+   "pos": [
+    -4.7,
+    -3.0,
+    0
+   ],
+   "view": "34",
+   "dir": 1,
+   "pose": "point_up",
+   "face": "sus",
+   "move_s": 0.03
+  },
+  {
+   "who": "nb",
+   "at": {
+    "s": 15.397
+   },
+   "pose": "point_out",
+   "face": "rage",
+   "dir": 1
+  },
+  {
+   "who": "nb",
+   "at": {
+    "s": 16.9
+   },
+   "face": "scream"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 15.647
+   },
+   "face": "sideeye",
+   "pose": "hands_hips",
+   "dir": -1
+  },
+  {
+   "who": "nb",
+   "at": {
+    "s": 18.238
+   },
+   "pos": [
+    90,
+    90,
+    0
+   ],
+   "move_s": 0.03
+  },
+  {
+   "who": "mom",
+   "at": {
+    "s": 18.238
+   },
+   "pos": [
+    90,
+    90,
+    0
+   ],
+   "move_s": 0.03
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 18.238
+   },
+   "pos": [
+    90,
+    90,
+    0
+   ],
+   "move_s": 0.03
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 27.016
+   },
+   "pos": [
+    90,
+    90,
+    0
+   ],
+   "move_s": 0.03
+  },
+  {
+   "who": "nb",
+   "at": {
+    "s": 27.016
+   },
+   "pos": [
+    -0.7,
+    1.35,
+    0
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "sit_chair",
+   "face": "wail",
+   "move_s": 0.03
+  },
+  {
+   "who": "mom",
+   "at": {
+    "s": 27.016
+   },
+   "pos": [
+    0.7,
+    1.35,
+    0
+   ],
+   "view": "front",
+   "dir": -1,
+   "pose": "sit_chair",
+   "face": "deadInside",
+   "move_s": 0.03
+  },
+  {
+   "who": "nb",
+   "at": {
+    "s": 29.931
+   },
+   "face": "tired"
+  },
+  {
+   "who": "mom",
+   "at": {
+    "s": 28.172
+   },
+   "face": "sick"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 30.786
+   },
+   "pos": [
+    90,
+    90,
+    0
+   ],
+   "move_s": 0.03
+  },
+  {
+   "who": "nb",
+   "at": {
+    "s": 30.786
+   },
+   "pos": [
+    90,
+    90,
+    0
+   ],
+   "move_s": 0.03
+  },
+  {
+   "who": "mom",
+   "at": {
+    "s": 30.786
+   },
+   "pos": [
+    90,
+    90,
+    0
+   ],
+   "move_s": 0.03
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 40.574
+   },
+   "pos": [
+    90,
+    90,
+    0
+   ],
+   "move_s": 0.03
+  },
+  {
+   "who": "nb",
+   "at": {
+    "s": 40.574
+   },
+   "pos": [
+    -0.7,
+    1.35,
+    0
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "sit_chair",
+   "face": "terrified",
+   "move_s": 0.03
+  },
+  {
+   "who": "mom",
+   "at": {
+    "s": 40.574
+   },
+   "pos": [
+    0.7,
+    1.35,
+    0
+   ],
+   "view": "front",
+   "dir": -1,
+   "pose": "sit_chair",
+   "face": "wail",
+   "move_s": 0.03
+  },
+  {
+   "who": "nb",
+   "at": {
+    "s": 41.344
+   },
+   "pos": [
+    90,
+    90,
+    0
+   ],
+   "move_s": 0.03
+  },
+  {
+   "who": "mom",
+   "at": {
+    "s": 41.344
+   },
+   "pos": [
+    90,
+    90,
+    0
+   ],
+   "move_s": 0.03
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 41.344
+   },
+   "pos": [
+    -0.2,
+    1.35,
+    0
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "sit_chair",
+   "face": "cool",
+   "prop": "lemonade",
+   "hand": "R",
+   "move_s": 0.03
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 44.383
+   },
+   "face": "proud"
+  },
+  {
+   "who": "hero",
+   "at": {
+    "s": 45.51
+   },
+   "face": "cool"
+  }
+ ],
+ "sentences": [
+  {
+   "text": "He poured forty gallons of bright white paint onto his roof...",
+   "words": [
+    0,
+    10
+   ],
+   "subject": "hero"
+  },
+  {
+   "text": "while every single neighbor in the valley coated theirs in thick black tar.",
+   "words": [
+    11,
+    23
+   ],
+   "subject": "town"
+  },
+  {
+   "text": "Down here, summers hit a hundred and fifteen degrees,",
+   "words": [
+    24,
+    32
+   ],
+   "subject": "sign"
+  },
+  {
+   "text": "and everyone swears dark tar is the only thing that seals out cracks.",
+   "words": [
+    33,
+    45
+   ],
+   "subject": "nb"
+  },
+  {
+   "text": "His next-door neighbor yells up,",
+   "words": [
+    46,
+    50
+   ],
+   "subject": "nb"
+  },
+  {
+   "text": "You're blinding the whole street\u2014and that chalk will wash off by July!",
+   "words": [
+    51,
+    62
+   ],
+   "subject": "nb"
+  },
+  {
+   "text": "Then August arrives,",
+   "words": [
+    63,
+    65
+   ],
+   "subject": "town"
+  },
+  {
+   "text": "and the hottest heatwave in fifty years parks right over the town.",
+   "words": [
+    66,
+    77
+   ],
+   "subject": "town"
+  },
+  {
+   "text": "Inside the black-tar houses, the roofs act like giant frying pans\u2014",
+   "words": [
+    78,
+    88
+   ],
+   "subject": "roof"
+  },
+  {
+   "text": "soaking up the sun and baking the rooms underneath even at midnight.",
+   "words": [
+    89,
+    100
+   ],
+   "subject": "nb"
+  },
+  {
+   "text": "Meanwhile, his white roof acts like a mirror,",
+   "words": [
+    101,
+    108
+   ],
+   "subject": "town"
+  },
+  {
+   "text": "bouncing almost ninety percent of that sunlight straight back into space before it ever turns into heat.",
+   "words": [
+    109,
+    125
+   ],
+   "subject": "town"
+  },
+  {
+   "text": "While every AC unit on the block trips the power grid,",
+   "words": [
+    126,
+    136
+   ],
+   "subject": "town"
+  },
+  {
+   "text": "he's sitting inside twenty degrees cooler\u2014",
+   "words": [
+    137,
+    142
+   ],
+   "subject": "hero"
+  },
+  {
+   "text": "without turning on a single machine.",
+   "words": [
+    143,
+    148
+   ],
+   "subject": "hero"
+  }
+ ],
+ "fx": [
+  {
+   "at": {
+    "s": 2.005
+   },
+   "kind": "shine",
+   "on": "hero"
+  },
+  {
+   "at": {
+    "s": 16.847
+   },
+   "kind": "glint",
+   "on": "hero"
+  },
+  {
+   "at": {
+    "s": 15.547
+   },
+   "kind": "steam",
+   "on": "nb"
+  },
+  {
+   "at": {
+    "s": 7.615
+   },
+   "kind": "sweat",
+   "on": "nb"
+  },
+  {
+   "at": {
+    "s": 27.316
+   },
+   "kind": "sweat",
+   "on": "nb"
+  },
+  {
+   "at": {
+    "s": 27.616
+   },
+   "kind": "sweat",
+   "on": "mom"
+  },
+  {
+   "at": {
+    "s": 29.931
+   },
+   "kind": "steam",
+   "on": "nb"
+  },
+  {
+   "at": {
+    "s": 41.844
+   },
+   "kind": "shine",
+   "on": "hero"
+  },
+  {
+   "at": {
+    "s": 45.61
+   },
+   "kind": "glint",
+   "on": "hero"
+  }
+ ],
+ "moods": [
+  {
+   "at": {
+    "s": 0
+   },
+   "look": "warm_up"
+  },
+  {
+   "at": {
+    "s": 15.447
+   },
+   "look": "flash_warm"
+  },
+  {
+   "at": {
+    "s": 18.388
+   },
+   "look": "flash_warm"
+  },
+  {
+   "at": {
+    "s": 27.016
+   },
+   "look": "flash_warm"
+  },
+  {
+   "at": {
+    "s": 40.178
+   },
+   "look": "flash_red"
+  },
+  {
+   "at": {
+    "s": 41.344
+   },
+   "look": "spot_hero"
+  }
+ ],
+ "sound": []
+}
