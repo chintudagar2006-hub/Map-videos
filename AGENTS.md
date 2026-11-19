@@ -5,6 +5,13 @@ a funny narrated story told on an animated **world map** (real country shapes, c
 flag-balls, arrows, a 3D coin...) intercut with short **gag scenes** of 2D toon-card characters inside small 3D rooms.
 Everything is code: three.js scenes rendered frame by frame by headless Chrome, a Kokoro voice, a synthesized sound mix.
 
+## Which kind of video?
+- **Map video** ("What if...", history, countries, economy): follow THIS file (sections 1-4). Example: `episodes/globo`.
+- **Simple animated story / skit with no map**: follow **STORY_SHORTS.md** (plus sections 0 and 5 here).
+  Examples: `episodes/viper`, `episodes/sandbridge`.
+- Characters for both: **docs/CHARACTERS.md** (all names) and **docs/characters/sheetNN.jpg** (pictures).
+  Always use these same characters; make a new cast sheet only when nothing fits.
+
 ## 0. Talking to the owner
 - Reply in **Hinglish** (Roman Hindi + English), short and clear. Scripts, captions and on-screen text are **English**.
 - The target audience is **US / international**. Do NOT add Indian characters unless asked.

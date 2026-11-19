@@ -1,0 +1,136 @@
+{
+ "lead": 0.3,
+ "gap": 0.2,
+ "tail": 2.2,
+ "voices": {
+  "nar": {
+   "style": "am_michael:1.0",
+   "speed": 1.3,
+   "pitch": 0,
+   "eq": "equalizer=f=180:t=q:w=1:g=2,equalizer=f=3200:t=q:w=1.2:g=2.5,equalizer=f=7000:t=q:w=1:g=1.5"
+  }
+ },
+ "lines": [
+  {
+   "who": "nar",
+   "say": "He poured dry sand underneath a five-hundred-ton stone bridge.",
+   "speed": 1.0,
+   "caption": "He poured dry sand underneath a 500-ton stone bridge.",
+   "gap": 0.4
+  },
+  {
+   "who": "nar",
+   "say": "You see, two teams are racing to build the longest stone arch bridge across a roaring river.",
+   "speed": 1.08,
+   "gap": 0.3
+  },
+  {
+   "who": "nar",
+   "say": "When the chief architect sees a junior engineer filling iron cylinders with beach sand under the main support beams,",
+   "speed": 1.1,
+   "gap": 0.12
+  },
+  {
+   "who": "nar",
+   "say": "his face turns red:",
+   "speed": 1.05,
+   "gap": 0.15
+  },
+  {
+   "who": "nar",
+   "say": "\"Are you out of your mind? One rainstorm and this whole bridge washes into the river!\"",
+   "speed": 1.18,
+   "gap": 0.45
+  },
+  {
+   "who": "nar",
+   "say": "But the kid doesn't say a word.",
+   "speed": 1.0,
+   "gap": 0.15
+  },
+  {
+   "who": "nar",
+   "say": "He just seals the boxes tight.",
+   "speed": 1.0,
+   "gap": 0.55
+  },
+  {
+   "who": "nar",
+   "say": "Months later, both bridges are finished.",
+   "speed": 1.05,
+   "gap": 0.3
+  },
+  {
+   "who": "nar",
+   "say": "Now comes the hardest part:",
+   "speed": 1.0,
+   "gap": 0.15
+  },
+  {
+   "who": "nar",
+   "say": "removing the wooden supports without the heavy stones collapsing.",
+   "speed": 1.05,
+   "gap": 0.4
+  },
+  {
+   "who": "nar",
+   "say": "The rival team grabs axes and saws to chop their timber out.",
+   "speed": 1.1,
+   "gap": 0.25
+  },
+  {
+   "who": "nar",
+   "say": "With every swing, the massive stones shift violently,",
+   "speed": 1.1,
+   "gap": 0.15
+  },
+  {
+   "who": "nar",
+   "say": "until a jagged crack shoots straight through their arch.",
+   "speed": 1.05,
+   "gap": 0.6
+  },
+  {
+   "who": "nar",
+   "say": "On the other bridge, the chief architect is sweating bullets, waiting for disaster.",
+   "speed": 1.08,
+   "gap": 0.35
+  },
+  {
+   "who": "nar",
+   "say": "Meanwhile, the young engineer calmly walks underneath the massive arch with a tiny wrench.",
+   "speed": 1.02,
+   "gap": 0.3
+  },
+  {
+   "who": "nar",
+   "say": "He kneels down next to the iron boxes...",
+   "speed": 0.95,
+   "gap": 0.3
+  },
+  {
+   "who": "nar",
+   "say": "and unscrews a small plug at the bottom.",
+   "speed": 0.95,
+   "gap": 0.5
+  },
+  {
+   "who": "nar",
+   "say": "Instantly, dry sand begins pouring out like a giant hourglass.",
+   "speed": 1.0,
+   "gap": 0.4
+  },
+  {
+   "who": "nar",
+   "say": "Millimeter by millimeter, the wooden supports lower smoothly,",
+   "speed": 0.92,
+   "gap": 0.15
+  },
+  {
+   "who": "nar",
+   "say": "allowing the five-hundred-ton stone bridge to lock into place without a single crack.",
+   "speed": 1.0,
+   "caption": "allowing the 500-ton stone bridge to lock into place without a single crack."
+  }
+ ]
+}

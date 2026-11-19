@@ -1,0 +1,105 @@
+{
+ "lead": 0.35,
+ "gap": 0.2,
+ "tail": 2.6,
+ "voices": {
+  "nar": {
+   "style": "am_michael:1.0",
+   "speed": 1.25,
+   "pitch": 0,
+   "eq": "equalizer=f=180:t=q:w=1:g=2,equalizer=f=3200:t=q:w=1.2:g=2.5,equalizer=f=7000:t=q:w=1:g=1.5"
+  }
+ },
+ "lines": [
+  {
+   "who": "nar",
+   "say": "The world's deadliest assassin took a contract to eliminate a ruthless king,",
+   "speed": 1.0,
+   "gap": 0.13
+  },
+  {
+   "who": "nar",
+   "say": "and broke into the wrong palace... without his glasses.",
+   "speed": 1.0,
+   "gap": 0.47
+  },
+  {
+   "who": "nar",
+   "say": "Half-blind, Viper dropped through a roof straight into a smoky room,",
+   "speed": 1.05,
+   "gap": 0.13
+  },
+  {
+   "who": "nar",
+   "say": "mistaking the royal kitchen for the throne room.",
+   "speed": 1.05,
+   "gap": 0.38
+  },
+  {
+   "who": "nar",
+   "say": "Before he could escape, the terrifying head chef cornered him with a giant cleaver.",
+   "speed": 1.08,
+   "gap": 0.42
+  },
+  {
+   "who": "nar",
+   "say": "Thinking fast, Viper dipped a finger into a bubbling pot of mysterious green stew.",
+   "speed": 1.05,
+   "gap": 0.34
+  },
+  {
+   "who": "nar",
+   "say": "Even though it tasted like boiled socks,",
+   "speed": 1.0,
+   "gap": 0.13
+  },
+  {
+   "who": "nar",
+   "say": "he let out a dramatic gasp... and called it a masterpiece.",
+   "speed": 0.98,
+   "gap": 0.42
+  },
+  {
+   "who": "nar",
+   "say": "Overwhelmed, the chef burst into tears of joy.",
+   "speed": 1.0,
+   "gap": 0.17
+  },
+  {
+   "who": "nar",
+   "say": "Nobody had ever praised his cooking before.",
+   "speed": 0.98,
+   "gap": 0.38
+  },
+  {
+   "who": "nar",
+   "say": "Even better, he invited Viper to help serve the king's private dinner.",
+   "speed": 1.05,
+   "gap": 0.38
+  },
+  {
+   "who": "nar",
+   "say": "Royal guards checked every tray, completely ignoring the hooded assassin carrying a silver platter.",
+   "speed": 1.08,
+   "gap": 0.38
+  },
+  {
+   "who": "nar",
+   "say": "Viper reached the throne in seconds.",
+   "speed": 1.0,
+   "gap": 0.47
+  },
+  {
+   "who": "nar",
+   "say": "His secret?",
+   "speed": 0.95,
+   "gap": 0.38
+  },
+  {
+   "who": "nar",
+   "say": "He spent the next week recovering from food poisoning.",
+   "speed": 0.98,
+   "gap": 0.17
+  }
+ ]
+}
