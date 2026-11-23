@@ -4,3 +4,4 @@ episodes/*/out/
 episodes/*/sound/mix_raw.wav
 episodes/*/voice/voice48.wav
 __pycache__/
+kit/blender/assets/

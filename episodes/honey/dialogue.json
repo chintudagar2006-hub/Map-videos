@@ -1,0 +1,87 @@
+{
+ "lead": 0.35,
+ "gap": 0.2,
+ "tail": 2.6,
+ "voices": {
+  "nar": {
+   "style": "am_michael:1.0",
+   "speed": 1.25,
+   "pitch": 0,
+   "eq": "equalizer=f=180:t=q:w=1:g=2,equalizer=f=3200:t=q:w=1.2:g=2.5,equalizer=f=7000:t=q:w=1:g=1.5"
+  }
+ },
+ "lines": [
+  {
+   "who": "nar",
+   "say": "What would happen if you fell into a giant pool of honey?",
+   "speed": 1.0,
+   "gap": 0.15
+  },
+  {
+   "who": "nar",
+   "say": "Could you just swim out?",
+   "speed": 1.0,
+   "gap": 0.45
+  },
+  {
+   "who": "nar",
+   "say": "Well, here's the good news. Honey is denser than water, so you wouldn't sink. You'd float.",
+   "speed": 1.0,
+   "gap": 0.4
+  },
+  {
+   "who": "nar",
+   "say": "The bad news? Honey is thousands of times thicker than water.",
+   "speed": 1.0,
+   "gap": 0.3
+  },
+  {
+   "who": "nar",
+   "say": "Every arm stroke would feel like pushing through wet cement, and the harder you pull, the harder it pulls back.",
+   "speed": 1.03,
+   "gap": 0.4
+  },
+  {
+   "who": "nar",
+   "say": "Sounds crazy? In 1919, a giant wave of molasses flooded the streets of Boston, moving at thirty-five miles per hour.",
+   "speed": 1.03,
+   "gap": 0.3
+  },
+  {
+   "who": "nar",
+   "say": "People got stuck, and rescuers couldn't reach them for hours.",
+   "speed": 1.0,
+   "gap": 0.4
+  },
+  {
+   "who": "nar",
+   "say": "So you'd just lie there. Sticky. Exhausted. Waiting.",
+   "speed": 0.92,
+   "gap": 0.5
+  },
+  {
+   "who": "nar",
+   "say": "But don't worry. Honey never spoils.",
+   "speed": 1.0,
+   "gap": 0.35
+  },
+  {
+   "who": "nar",
+   "say": "Archaeologists will find you in three thousand years, perfectly preserved.",
+   "speed": 0.97,
+   "gap": 0.45
+  },
+  {
+   "who": "nar",
+   "say": "The sweetest mummy in history.",
+   "speed": 0.95,
+   "gap": 0.7
+  },
+  {
+   "who": "nar",
+   "say": "Would you try to swim, or just start eating? Comment below.",
+   "speed": 1.05,
+   "gap": 0.2
+  }
+ ]
+}
