@@ -1,0 +1,20 @@
+name: transcribe
+on:
+  push:
+    branches: ['voice-*']
+    paths: ['voice/refs/*.mp3']
+permissions:
+  contents: write
+jobs:
+  stt:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -q faster-whisper
+      - run: python voice/kit/transcribe.py
+      - run: |
+          git config user.name voice-bot; git config user.email voice-bot@users.noreply.github.com
+          git add voice/refs; git commit -m "transcripts [skip ci]" || exit 0
+          git pull --rebase; git push
