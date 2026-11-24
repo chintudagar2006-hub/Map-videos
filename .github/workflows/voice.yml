@@ -2,7 +2,7 @@ name: voice
 on:
   push:
     branches: ['voice-*']
-    paths: ['voice/jobs/**/script.txt', 'voice/jobs/**/script.tsv']
+    paths: ['voice/jobs/**/script.txt', 'voice/jobs/**/script.tsv', 'voice/jobs/**/retry.json']
 permissions:
   contents: write
 jobs:

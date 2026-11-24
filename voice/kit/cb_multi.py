@@ -6,13 +6,15 @@ REF = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ref_ethan.wav')
 src, out = sys.argv[1], sys.argv[2]; os.makedirs(out, exist_ok=True)
 rows = [l.rstrip('\n').split('\t', 1) for l in open(src) if l.strip()]
 EX = {'N': (0.5, 0.3)}
+import json
+RETRY = json.load(open(os.path.join(os.path.dirname(src), 'retry.json'))) if os.path.exists(os.path.join(os.path.dirname(src), 'retry.json')) else {}
 m = ChatterboxTTS.from_pretrained(device='cuda' if torch.cuda.is_available() else 'cpu')
 for i, (spk, t) in enumerate(rows):
     f = f'{out}/{i:03d}.wav'
     if os.path.exists(f): continue
     ex, cfg = EX.get(spk, (0.75, 0.4))
     m.prepare_conditionals(REF, exaggeration=ex)
-    torch.manual_seed(1000 + i)
+    torch.manual_seed(1000 + i + 977 * int(RETRY.get(str(i), 0)))
     w = m.generate(t, exaggeration=ex, cfg_weight=cfg, temperature=0.75)
     ta.save(f + '.tmp.wav', w, m.sr); os.replace(f + '.tmp.wav', f)
     print(i, spk, round(w.shape[-1] / m.sr, 2), t, flush=True)
