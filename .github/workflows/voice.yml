@@ -2,7 +2,7 @@ name: voice
 on:
   push:
     branches: ['voice-*']
-    paths: ['voice/jobs/**/script.txt']
+    paths: ['voice/jobs/**/script.txt', 'voice/jobs/**/script.tsv']
 permissions:
   contents: write
 jobs:
@@ -21,7 +21,7 @@ jobs:
         run: |
           for d in voice/jobs/*/; do
             [ -f "$d/words.json" ] && continue
-            python voice/kit/chatterbox_voice.py "$d/script.txt" "$d/lines"
+            if [ -f "$d/script.tsv" ]; then python voice/kit/cb_multi.py "$d/script.tsv" "$d/lines"; else python voice/kit/chatterbox_voice.py "$d/script.txt" "$d/lines"; fi
             python voice/kit/words.py "$d/lines" "$d/words.json"
           done
       - name: commit
