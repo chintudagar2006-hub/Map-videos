@@ -1,0 +1,31 @@
+name: voice
+on:
+  push:
+    branches: ['voice-*']
+    paths: ['voice/jobs/**/script.txt']
+permissions:
+  contents: write
+jobs:
+  tts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: deps
+        run: |
+          pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -q chatterbox-tts "setuptools<81" faster-whisper
+      - name: generate
+        run: |
+          for d in voice/jobs/*/; do
+            [ -f "$d/words.json" ] && continue
+            python voice/kit/chatterbox_voice.py "$d/script.txt" "$d/lines"
+            python voice/kit/words.py "$d/lines" "$d/words.json"
+          done
+      - name: commit
+        run: |
+          git config user.name voice-bot; git config user.email voice-bot@users.noreply.github.com
+          git add voice/jobs; git commit -m "voice output [skip ci]" || exit 0
+          git pull --rebase; git push
