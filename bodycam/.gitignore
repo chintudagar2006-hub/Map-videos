@@ -1,0 +1,4 @@
+# Large source/rendered media stay local (re-download from sources listed in each brief)
+*/raw_footage/*.mov
+*/raw_footage/*.mp4
+*/rendered/*.mp4
