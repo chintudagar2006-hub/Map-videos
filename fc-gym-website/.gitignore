@@ -1,0 +1,8 @@
+node_modules/
+.next/
+out/
+.asset-cache/
+next-env.d.ts
+*.tsbuildinfo
+test-results/
+screenshots/
